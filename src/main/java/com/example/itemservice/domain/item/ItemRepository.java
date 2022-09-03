@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Repository
-public class itemRepository {
+@Repository // @Component를 포함하고있엇 componentScan 대상이된다.
+public class ItemRepository {
 
     private static final Map<Long, Item> store = new HashMap<>();
     private static long sequence = 0L;
